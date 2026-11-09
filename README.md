@@ -1,4 +1,4 @@
-# 🏥 MHRS Benzeri Merkezi Hastane ve Hekim Randevu Yönetim Sistemi
+# MHRS Benzeri Merkezi Hastane ve Hekim Randevu Yönetim Sistemi
 
 ## Proje Hakkında
 
