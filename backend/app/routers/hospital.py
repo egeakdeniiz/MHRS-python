@@ -11,10 +11,8 @@ router = APIRouter(
     tags=["Hospital & Doctors"]
 )
 
-# --- Branş Endpoints ---
 @router.post("/branches", response_model=BranchResponse, status_code=status.HTTP_201_CREATED)
 def create_branch(branch: BranchCreate, db: Session = Depends(get_db)):
-    """Yeni bir hastane branşı ekler (Örn: Kardiyoloji)."""
     db_branch = db.query(Branch).filter(Branch.name == branch.name).first()
     if db_branch:
         raise HTTPException(status_code=400, detail="Bu branş zaten mevcut.")
@@ -31,10 +29,8 @@ def get_branches(db: Session = Depends(get_db)):
     return db.query(Branch).all()
 
 
-# --- Doktor Endpoints ---
 @router.post("/doctors", response_model=DoctorResponse, status_code=status.HTTP_201_CREATED)
 def create_doctor(doctor: DoctorCreate, db: Session = Depends(get_db)):
-    """Belirli bir branşa yeni doktor ekler."""
     branch = db.query(Branch).filter(Branch.id == doctor.branch_id).first()
     if not branch:
         raise HTTPException(status_code=404, detail="Belirtilen branş bulunamadı.")
@@ -47,5 +43,4 @@ def create_doctor(doctor: DoctorCreate, db: Session = Depends(get_db)):
 
 @router.get("/doctors", response_model=List[DoctorResponse])
 def get_doctors(db: Session = Depends(get_db)):
-    """Sistemdeki tüm doktorları ve branşlarını listeler."""
     return db.query(Doctor).all()
