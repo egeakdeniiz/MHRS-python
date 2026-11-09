@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 
-# --- Branch (Branş) Şemaları ---
 class BranchBase(BaseModel):
     name: str
 
@@ -14,7 +13,6 @@ class BranchResponse(BranchBase):
         from_attributes = True
 
 
-# --- Doctor (Doktor) Şemaları ---
 class DoctorBase(BaseModel):
     full_name: str
     branch_id: int
@@ -24,7 +22,7 @@ class DoctorCreate(DoctorBase):
 
 class DoctorResponse(DoctorBase):
     id: int
-    branch: BranchResponse # Doktorun hangi branşta olduğunu detaylı gösterir
+    branch: BranchResponse 
 
     class Config:
         from_attributes = True
