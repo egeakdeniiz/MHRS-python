@@ -14,7 +14,6 @@ router = APIRouter(
 
 @router.post("/register", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 def register_user(user: UserCreate, db: Session = Depends(get_db)):
-    """Yeni kullanıcı kaydı oluşturur."""
     db_user = get_user_by_email(db, email=user.email)
     if db_user:
         raise HTTPException(
@@ -25,7 +24,6 @@ def register_user(user: UserCreate, db: Session = Depends(get_db)):
 
 @router.post("/login")
 def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    """Kullanıcı girişi yapar ve JWT erişim token'ı üretir."""
     user = get_user_by_email(db, email=form_data.username)
     if not user or not verify_plain_password(form_data.password, user.hashed_password):
         raise HTTPException(
@@ -34,6 +32,5 @@ def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db:
             headers={"WWW-Authenticate": "Bearer"},
         )
     
-    # Başarılı giriş sonrası JWT token üretimi
     access_token = create_access_token(data={"sub": user.email})
     return {"access_token": access_token, "token_type": "bearer"}
