@@ -1,6 +1,6 @@
 # 🏥 MHRS Benzeri Merkezi Hastane ve Hekim Randevu Yönetim Sistemi
 
-## 📌 Proje Hakkında
+## Proje Hakkında
 
 Bu proje, Türkiye'de kullanılan Merkezi Hekim Randevu Sistemi (MHRS) örnek alınarak geliştirilen, vatandaşların hastane, klinik ve hekim seçerek çevrim içi randevu oluşturmasını sağlayan merkezi bir hastane ve hekim randevu yönetim sistemidir.
 
@@ -8,7 +8,7 @@ Sistem; vatandaşların randevu işlemlerini gerçekleştirmesini, hekimlerin ç
 
 Proje kapsamında kullanıcı yönetimi, randevu planlama, dinamik kontenjan yönetimi, bekleme listesi, bildirim ve raporlama gibi temel işlevler ele alınmaktadır.
 
-## 🎯 Projenin Amacı
+##  Projenin Amacı
 
 - Vatandaşların çevrim içi randevu oluşturabilmesini sağlamak.
 - Hastane, klinik ve hekim bilgilerinin merkezi olarak yönetilmesini sağlamak.
@@ -17,7 +17,7 @@ Proje kapsamında kullanıcı yönetimi, randevu planlama, dinamik kontenjan yö
 - Boş randevu bulunmadığında bekleme listesi oluşturulmasını sağlamak.
 - Kullanıcı rollerine göre yetkilendirme gerçekleştirmek.
 
-## ✨ Temel Özellikler
+##  Temel Özellikler
 
 - Kullanıcı kayıt ve giriş sistemi
 - Rol bazlı yetkilendirme
@@ -33,7 +33,7 @@ Proje kapsamında kullanıcı yönetimi, randevu planlama, dinamik kontenjan yö
 - Merkezi sistem yönetimi
 - Randevu raporlama ve analiz
 
-## 👥 Kullanıcı Rolleri
+##  Kullanıcı Rolleri
 
 | Kullanıcı Rolü     | Yetkileri                                                                     |
 | ------------------ | ----------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ Proje kapsamında kullanıcı yönetimi, randevu planlama, dinamik kontenjan yö
 | Hastane Yöneticisi | Klinik, hekim, çalışma takvimi ve kontenjan yönetimi                          |
 | Sistem Yöneticisi  | İl, ilçe, hastane, kullanıcı ve merkezi sistem yönetimi                       |
 
-## 🛠️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 - **Frontend:** 
 - **Backend:** Python – FastAPI
@@ -51,7 +51,7 @@ Proje kapsamında kullanıcı yönetimi, randevu planlama, dinamik kontenjan yö
 - **API:**  fastAPI
 - **Tasarım:** UML ve sistem mimarisi diyagramları
   
-## 🏗️ Sistem Mimarisi
+##  Sistem Mimarisi
 
 Proje, katmanlı mimari yaklaşımı temel alınarak tasarlanmıştır.
 
@@ -65,7 +65,7 @@ Mimari yapı aşağıdaki katmanlardan oluşmaktadır:
 
 Bu yapı sayesinde kullanıcı arayüzü, iş kuralları ve veri erişim süreçleri birbirinden ayrılarak daha düzenli ve sürdürülebilir bir yazılım mimarisi hedeflenmektedir.
 
-## 📐 Yazılım Tasarımı ve UML
+##  Yazılım Tasarımı ve UML
 
 Proje kapsamında aşağıdaki tasarım çalışmaları hazırlanmıştır:
 
@@ -80,18 +80,18 @@ Proje kapsamında aşağıdaki tasarım çalışmaları hazırlanmıştır:
 - Architecture Decision Record (ADR)
 - Kontenjan ve Eş Zamanlı Rezervasyon Algoritması
 
-## 🔒 Güvenlik ve Veri Yönetimi
+##  Güvenlik ve Veri Yönetimi
 
 - Kullanıcıların rollerine göre erişim kontrolü sağlanması hedeflenmektedir.
 - Hastane yöneticilerinin yalnızca yetkili oldukları hastanenin verilerine erişmesi amaçlanmaktadır.
 - Eş zamanlı rezervasyon işlemlerinde kontenjan aşımının önlenmesi hedeflenmektedir.
 - Kullanıcı işlemlerinin denetim kayıtlarıyla takip edilmesi planlanmaktadır.
 
-## 📋 Proje Kapsamı ve Sınırlar
+##  Proje Kapsamı ve Sınırlar
 
 Bu proje bağımsız bir test ortamında geliştirilmektedir.
 
 Gerçek MHRS, e-Nabız veya e-Devlet sistemleriyle entegrasyon yapılmamaktadır. Gerçek hasta verileri kullanılmamakta; teşhis, reçete ve hasta dosyası yönetimi proje kapsamı dışında tutulmaktadır.
 
-## 🚀 Kurulum ve Çalıştırma
+##  Kurulum ve Çalıştırma
 
