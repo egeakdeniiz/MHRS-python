@@ -9,7 +9,6 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="MHRS Backend API",
     version="1.0.0",
-    description="Python 3.12 ve FastAPI ile geliştirilmiş altyapı"
 )
  
 app.include_router(auth_router.router)
