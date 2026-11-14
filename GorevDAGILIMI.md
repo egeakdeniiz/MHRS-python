@@ -10,6 +10,6 @@
 
 | Ekip Üyesi | Sorumlu Olduğu Görevler |
 |------------|-------------------------|
-| İbrahim Efe Ergan | Use Case Diyagramı, Class Diyagramı, Sistem Mimarisi, Sequence Diyagramları, ADR, Kontenjan Algoritması, FastAPI geliştirme |
+| İbrahim Efe Ergan | Use Case Diyagramı, Class Diyagramı, Sistem Mimarisi, Sequence Diyagramları, ADR, Kontenjan Algoritması, Django + Django REST Framework |
 | İlayda Kayıkçı | ER Diyagramı, Veritabanı Tasarımı ve MSSQL İşlemleri |
 | Ege Akdeniz | REST API Tasarımı, kontrol adımları, test adımları, entegrasyonlar |
