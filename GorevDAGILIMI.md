@@ -10,6 +10,6 @@
 
 | Ekip Üyesi | Sorumlu Olduğu Görevler |
 |------------|-------------------------|
-| İbrahim Efe Ergan | Use Case Diyagramı, Class Diyagramı, Sistem Mimarisi, Sequence Diyagramları, ADR, Kontenjan Algoritması, Django + Django REST Framework |
-| İlayda Kayıkçı | ER Diyagramı, Veritabanı Tasarımı ve MSSQL İşlemleri ,CRUD işlemleri ve veritabanı testleri |
-| Ege Akdeniz | REST API Tasarımı, kontrol adımları, test adımları, entegrasyonlar |
+| İbrahim Efe Ergan | Arayüz Tasarımı ve Geliştirme: vatandaş, hekim, hastane yöneticisi ve sistem yöneticisi ekranları (HTML şablonları, Bootstrap 5), mobil uyumlu (responsive) tasarım. Sistem Mimarisi ve UseCase diyagramlarını oluşturma. |
+| İlayda Kayıkçı |Veritabanı Tasarımı: ER diyagramını oluşturma, tablo ve ilişki tasarımı, SQL ile il/ilçe/hastane/klinik verisinin hazırlanması ve yüklenmesi, migration'lar, ADR.  |
+| Ege Akdeniz | Backend / REST API Geliştirme: Django REST Framework ile API uç noktaları, token kimlik doğrulama, doğrulama (kontrol) adımları, testler ve entegrasyonlar, Sequence diyagramlarını oluşturma. |
